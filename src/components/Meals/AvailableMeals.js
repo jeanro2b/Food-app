@@ -60,9 +60,11 @@ const AvailableMeals = () => {
       //   });
       // }
 
-      setMeals(DUMMY_MEALS);
-      setIsLoading(false);
+      // setMeals(loadedMeals);
+      // setIsLoading(false);
     };
+
+    setMeals(DUMMY_MEALS);
 
     fetchMeals().catch((error) => {
       setIsLoading(false);
