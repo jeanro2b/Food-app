@@ -6,8 +6,11 @@ import classes from './AvailableMeals.module.css';
 
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
-  // const [httpError, setHttpError] = useState();
+  const [isLoading, setIsLoading] = useState(true);
+  const [httpError, setHttpError] = useState();
+
+  setIsLoading(false);
+  setHttpError(false);
 
   const DUMMY_MEALS = [
     {
