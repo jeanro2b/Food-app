@@ -36,41 +36,43 @@ const AvailableMeals = () => {
     },
   ];
 
-  useEffect(() => {
-    const fetchMeals = async () => {
-      // const response = await fetch(
-      //   'https://react-http-3b2e8-default-rtdb.europe-west1.firebasedatabase.app/meals.json'
-      // );
-      // console.log(response);
+  // useEffect(() => {
+  //   const fetchMeals = async () => {
+  //     const response = await fetch(
+  //       'https://react-http-3b2e8-default-rtdb.europe-west1.firebasedatabase.app/meals.json'
+  //     );
+  //     console.log(response);
 
-      // if (!response.ok) {
-      //   throw new Error('Something went wrong!');
-      // }
+  //     if (!response.ok) {
+  //       throw new Error('Something went wrong!');
+  //     }
 
-      // const responseData = await response.json();
+  //     const responseData = await response.json();
 
-      // const loadedMeals = [];
+  //     const loadedMeals = [];
 
-      // for (const key in responseData) {
-      //   loadedMeals.push({
-      //     id: key,
-      //     name: responseData[key].name,
-      //     description: responseData[key].description,
-      //     price: responseData[key].price,
-      //   });
-      // }
+  //     for (const key in responseData) {
+  //       loadedMeals.push({
+  //         id: key,
+  //         name: responseData[key].name,
+  //         description: responseData[key].description,
+  //         price: responseData[key].price,
+  //       });
+  //     }
 
-      // setMeals(loadedMeals);
-      // setIsLoading(false);
-    };
+  //     setMeals(loadedMeals);
+  //     setIsLoading(false);
+  //   };
 
-    setMeals(DUMMY_MEALS);
+    
 
-    fetchMeals().catch((error) => {
-      setIsLoading(false);
-      setHttpError(error.message);
-    });
-  }, []);
+  //   fetchMeals().catch((error) => {
+  //     setIsLoading(false);
+  //     setHttpError(error.message);
+  //   });
+  // }, []);
+
+  setMeals(DUMMY_MEALS);
 
   if (isLoading) {
     return (
